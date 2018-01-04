@@ -573,6 +573,8 @@ class SortImports(object):
 
                     line = re.sub('^from ', '', line)
                     line = re.sub('^import ', '', line)
+                    if self.config['force_imports_to_top_sections'] and ' import ' not in line:
+                        section = 'AB'
                     if line.split(' ')[0] in self.config['force_to_top']:
                         section = 'A'
                     if not self.config['order_by_type']:

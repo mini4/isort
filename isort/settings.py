@@ -134,7 +134,8 @@ default = {'force_to_top': [],
            'force_sort_within_sections': False,
            'show_diff': False,
            'ignore_whitespace': False,
-           'no_lines_before': []}
+           'no_lines_before': [],
+           'force_imports_to_top_sections': False}
 
 
 @lru_cache()
