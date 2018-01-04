@@ -119,7 +119,6 @@ default = {'force_to_top': [],
            'order_by_type': True,
            'atomic': False,
            'lines_after_imports': -1,
-           'lines_between_imports_first_party': 0,
            'lines_between_sections': 1,
            'lines_between_types': 0,
            'combine_as_imports': False,
@@ -136,6 +135,7 @@ default = {'force_to_top': [],
            'show_diff': False,
            'ignore_whitespace': False,
            'no_lines_before': [],
+           'no_lines_after': [],
            'force_straight_imports_to_top_sections': False}
 
 

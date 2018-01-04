@@ -595,7 +595,8 @@ class SortImports(object):
                 if section_name in self.config['no_lines_before']:
                     while output and output[-1].strip() == '':
                         output.pop()
-                output += section_output + ([''] * self.config['lines_between_sections'])
+                output += section_output + [''] * (0 if section_name in self.config['no_lines_after'] else
+                                                   self.config['lines_between_sections'])
         while output and output[-1].strip() == '':
             output.pop()
         while output and output[0].strip() == '':
